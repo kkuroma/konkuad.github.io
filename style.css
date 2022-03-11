@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Consolas';
+    font-family: "Consolas","Menlo","Monaco","Andale Mono","Ubuntu Mono","monospace";
     line-height: 3;
 }
 
