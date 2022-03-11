@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Consolas';
+    line-height: 3;
+}
+
+h1 {
+    color: rgb(57, 229, 252);
+    font-weight: bold;
+    font-size: 40;
+}
+
+hr {
+    height: 5px;
+    color:rgb(255, 255, 255)
+    ;background-color:rgb(255, 255, 255)
+}
+
+p {
+    color: aliceblue;
+    line-height: 1.5;
+    font-size: 20;
+}
+
+ul.intext {
+    color: aliceblue;
+    font-size: 20;
+    margin-left: 40px;
+}
+
+ul.intext li{
+    line-height: 1.5;
+}
+
+h2 {
+    color: rgb(185, 239, 255);
+    font-weight: bold;
+}
+
+ul.intext b {
+    display: inline-block;
+    padding-right: 10px; 
+    line-height: 1.5;
+    width: 20%;
+}
+
+span.square {
+    width: 20px;
+    height: 20px;
+}
+
+ul.TopNavBar {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(10, 0, 48);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+ul.TopNavBar li {
+    float: left;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+ul.TopNavBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+ul.TopNavBar li a:hover {
+    background-color: rgb(52, 0, 82);
+}
