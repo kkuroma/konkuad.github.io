@@ -1,2 +1,2 @@
 # hello world
-<a href="gan.html"> lol </a>
+[Click me](gan.html){: .btn}
