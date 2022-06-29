@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+	<link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/container.css"/>
+	<link rel="shortcut icon" href="" class="Image"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="codes.js"></script>
+    <style>   
+        * {
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body onload="initDropDown('dropDown1'); initDropDown('dropDown2'); initDropDown('dropDown3');">
+    <ul class="topNavBar">
+        <li><a onclick="openNav()" style="cursor:pointer">&#9776; Navigation</a></li>
+        <li style="float:right"><a href="#contacts">Contacts</a></li>
+    </ul>
+    <div class="sideNavBar" id="mainNavBar">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About me</a>
+        <a href="#">Interests</a>  
+        <a href="#">Publications</a>
+        <a href="#">Projects</a>
+        <a href="apps.html">Apps</a>
+        <a href="#">Blogs</a>
+    </div>
+    <div class="mainContainer">
+        <h1 style="font-size: 40px;">
+            Punnawish Thuwajit
+        </h1>
+        <p>
+            Machine Learning Engineer / Researcher / Computer Sciences Student
+        </p>
+        <div class="contentBlock">
+            <h1 style="font-size: 35px;">About me</h1>
+            <hr>
+            <p style="font-size: 15px; color: rgb(68, 68, 68);">last updated : Jun 2022</p>
+            <h2 style="font-size: 25px; padding-bottom: 8;">Introduction</h2>
+            <img src='images/myface.png' style="float: left; width: 200px; border-radius: 30px; padding: 10px;"/>
+            <p>
+                Hi, I am <strong>Punnawish Thuwajit</strong>, a passionate problem solver wielding the power of artificial intelligences.
+            </p>
+            <p>
+                Right now, I'm an incoming freshman in <strong>Computer Sciences at the University of Wisconsin Madison</strong>.
+                I love playing with big amount of data, and deriving solutions out of how those data are structured. 
+                That is, I am a data scientist and a machine learning engineer.
+            </p>
+            <p>
+                In addition to college,  I am also working as a research intern at several institutes. 
+                Moreover, my colleages and I established our startup <strong>AIXOLOTL</strong>, specializing in providing
+                <strong>AI solutions</strong> for data magangement and scientific research at a reasonable price.
+            </p>
+            <p>This page will guide you through getting to know me more. Thank you for your visit!</p>
+
+            <h2 style="font-size: 25px; padding-bottom:8;padding-top:10;">Personal Information</h2>
+            <ul style="padding-left: 40px;">
+                <li>I was born on Septenber 14, 2003 at Madison, Wisconsin, USA.</li>
+                <li>I am both a Thai and US citizen.</li>
+                <li>My pronouns are he/him, although I don't really care.</li>
+            </ul>
+
+            <h2 style="font-size: 25px; padding-bottom:8;padding-top:10;">Preferred Names</h2>
+            <p>How should you call me? Apart from my real name, there are also nicknames that I go with.</p>
+            <div class="dropDown" id="dropDown1" style="font-size: 12px;">
+                <p onclick="dropDownToggle('dropDown1','100px')" style="cursor:pointer" class="dropDownToggler">&#9776; These are my preferred names.</p>
+                <p>My parents gave me the nickname <strong>"Konkruad"</strong> meaning a small stone in Thai.</p>
+                <p>My preferred nickname is <strong>"KK"</strong>, which is simply an abbreviation.</p>
+                <p>I use the alias <strong>"Chroma/ChromatimusX"</strong> for some social media and online registrations.</p>
+            </div>
+
+            <h2 style="font-size: 25px; padding-bottom:8;padding-top:10;">Languages</h2>
+            <p>
+                I am bilingual. I grow up speaking <strong>Thai</strong> as a native speaker, and I often use <strong>English</strong> in my communications. 
+                That aside, I hope to know more languages going forward! 
+            </p>
+            <p>
+                I can code in <strong>Python</strong>, <strong>Java</strong>, and <strong>JavaScript</strong>. Moreover, I prefer using
+                <strong>Markdown</strong>, <strong>LaTeX</strong>, or <strong>HTML+CSS</strong> in preparing for a website/document.
+            </p>
+
+            <h2 style="font-size: 25px; padding-bottom:8;padding-top:10;">Education</h2>
+            <p>
+                As mentioned, I am a Computer Sciences major at the <strong>University of Wisconsin Madison</strong> . Prior to this, I graduated high-school
+                from <strong>Suankularb Wittayalai School</strong>, Bangkok, Thailand. I am still considering further (graduate) education.
+            </p>
+
+            <h2 style="font-size: 25px; padding-bottom:8;padding-top:10;">Likes</h2>
+            <p>
+                Let's begin with my preferred delicacy. Originally, I like <strong>Japanese</strong> and <strong>Italian</strong> cuisine a lot.
+                However, after several incidents at a certain taco restaurant, I have grown my fondness over <strong>Mexican</strong> foods as well.
+            </p>
+            <div class="dropDown" id="dropDown2" style="font-size: 12px;">
+                <p onclick="dropDownToggle('dropDown2','100px')" style="cursor:pointer" class="dropDownToggler">&#9776; List of foods I really like</p>
+                <p><strong>Japanese Foods : </strong> All kinds of torched sushi, bento, and tempura.</p>
+                <p><strong>Italian Foods : </strong> Anything with parmesan cheese, in general, are super delicious.</p>
+                <p><strong>Mexican Foods : </strong> Beef/chicken taco with loads of cheese, sour cream, and pickled jalapeno. Yum!</p>
+            </div>
+            <p>
+                Going on to entertainment. Just a few years ago, I have begin watching <strong>anime</strong>, and I fell in love with the Japanese 
+                entertaining media real quick. I'm now also reading <strong>manga</strong> and <strong>light novels</strong> as well. I'll list some
+                genres of anime I like.  
+            </p>
+            <div class="dropDown" id="dropDown3" style="font-size: 12px;">
+                <p onclick="dropDownToggle('dropDown3','100px')" style="cursor:pointer" class="dropDownToggler">&#9776; List of anime genres I enjoyed</p>
+                <p><strong>Mech/Millitary</strong> anime, especially those about a revolution or liberation.</p>
+                <p><strong>Psychological magical girl</strong> series, no spoilers!</p>
+                <p><strong>Action</strong> anime in general, preferrably with a splash of <strong>supernatural</strong> powers.</p>
+            </div>
+
+            <h2 style="font-size: 25px; padding-bottom:8;padding-top:10;">Hobbies</h2>
+            <p>
+                Aside from my obvious hobby of programming (especially about machine learning), I have the skill of <strong>Origami</strong>, the art of
+                Japanese paper folding. Here are some models I have made in the past - each from one uncut sheet of square paper!.
+            </p>
+        </div>
+    </div>
+</body>
