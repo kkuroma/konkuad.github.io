@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+	<link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/container.css"/>
+	<link rel="shortcut icon" href="" class="Image"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="codes.js"></script>
+    <style>   
+        * {
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body onload="initDropDown('dropDown1');">
+    <ul class="topNavBar">
+        <li><a onclick="openNav()" style="cursor:pointer">&#9776; Navigation</a></li>
+        <li style="float:right"><a href="#contacts">Contacts</a></li>
+    </ul>
+    <div class="sideNavBar" id="mainNavBar">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About me</a>
+        <a href="#">Interests</a>  
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="origami.html">Origami</a>
+        <a href="#">Blogs</a>
+    </div>
+    <div class="mainContainer">
+        <h1 style="font-size: 40px;">
+            Punnawish Thuwajit - Projects
+        </h1>
+        <p>
+            Deep Learning Researcher / Origami Artist
+        </p>
+        <img src='images/myface.png' style="width: 300px; border-radius: 30px; padding: 10px;"/>
+        <div class="contentBlock">
+            <p>This section is still largely WIP due to most projects I have being in early stages or are confidential.</p>
+
+            <h2 style="font-size: 25px;" id="2022">StyleGAN Unsupervised Feature Control</h2>
+            <p>
+                Generative Adversarial Network (GAN) is a class of generative models. By this, GANs are capable of generating flawless copies 
+                of a dataset akin to an AI artist. However, one big flaw on GANs is the anonimity of the output data, as GANs are trained to
+                generate from random noise, which does not exhibit any pattern to correlate back to the input data.
+            </p>
+            <p>  
+                During last summer, I have taken upon myself to uncover the "black box" nature of GANs by investigating the eigenvectors of 
+                StyleGAN's mapping space, which does in fact manipulate the expected outcome of our generations substantially.
+            </p>
+
+            <h2 style="font-size: 25px;" id="2022">Cycle DDPM</h2>
+            <p>
+                Want to turn everything into anime? Well, several algorithm out there supports translation bewteen data. A notable one,
+                <strong>CycleGAN</strong> translates between any 2 domains of data with ease! However, GANs are known for their whacky behaviors
+                in training, namely "mode collapse", where the model cheats by reducing its generated variations.
+            </p>
+            <p>
+                A Denoising Diffusion Probablistic Model (DDPM) is in another class of generative models than GAN, and is the state-of-the-art algorithm for several AI generated arts.
+                Even DALL-E has its backend covered by a DDPM model. Here, I've taken interest to implement a CycleGAN like approact to
+                data translation. Hence, this projects is known as <strong>CycleDDPM</strong>
+            </p>
+            <img src='images/ddpm.png' style="width: 800px; border-radius: 30px; padding: 10px;"/>
+        </div>
+    </div>
+</body>

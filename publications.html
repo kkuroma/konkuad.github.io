@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+	<link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/container.css"/>
+	<link rel="shortcut icon" href="" class="Image"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="codes.js"></script>
+    <style>   
+        * {
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body onload="initDropDown('dropDown1');">
+    <ul class="topNavBar">
+        <li><a onclick="openNav()" style="cursor:pointer">&#9776; Navigation</a></li>
+        <li style="float:right"><a href="#contacts">Contacts</a></li>
+    </ul>
+    <div class="sideNavBar" id="mainNavBar">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About me</a>
+        <a href="#">Interests</a>  
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="origami.html">Origami</a>
+        <a href="#">Blogs</a>
+    </div>
+    <div class="mainContainer">
+        <h1 style="font-size: 40px;">
+            Punnawish Thuwajit - Publications
+        </h1>
+        <p>
+            Deep Learning Researcher / Origami Artist
+        </p>
+        <img src='images/myface.png' style="width: 300px; border-radius: 30px; padding: 10px;"/>
+        <div class="contentBlock">
+
+            <h1 style="font-size: 35px;">Navigation</h1>
+            <ul>
+                <li>Publications in <strong><a href="#2022" style="color:#000000; text-decoration:none;">2022</a></strong></li>
+                <li>Publications in <strong><a href="#2021" style="color:#000000; text-decoration:none;">2021</a></strong></li>
+                <li>Publications in <strong><a href="#2020" style="color:#000000; text-decoration:none;">2020</a></strong></li>
+            </ul>
+            <For>
+            <hr>
+
+            <h2 style="font-size: 25px;" id="2022">2022</h2>
+
+                <strong><a href="https://arxiv.org/abs/2208.08672" style="color:#000000; text-decoration:none;">[Paper]</a></strong>
+                <strong><a href="https://doi.org/10.48550/arXiv.2208.08672" style="color:#000000; text-decoration:none;">[Doi]</a></strong>
+                Osathitporn, P., Sawadwuthikul, G., Thuwajit, P., Ueafuea, K., Mateepithaktham, T., Kunaseth, N., ... & Wilaiprasitporn, T. (2022). RRWaveNet: A Compact End-to-End Multi-Scale Residual CNN for Robust PPG Respiratory Rate Estimation. arXiv preprint arXiv:2208.08672.
+
+            <h2 style="font-size: 25px;" id="2021">2021</h2>
+
+                <strong><a href="https://ieeexplore.ieee.org/document/9645336/" style="color:#000000; text-decoration:none;">[Paper]</a></strong>
+                <strong><a href="https://doi.org/10.1109/TII.2021.3133307" style="color:#000000; text-decoration:none;">[Doi]</a></strong>
+                Thuwajit, P., Rangpong, P., Sawangjai, P., Autthasan, P., Chaisaen, R., Banluesombatkul, N., ... & Wilaiprasitporn, T. (2021). EEGWaveNet: Multiscale CNN-Based Spatiotemporal Feature Extraction for EEG Seizure Detection. IEEE Transactions on Industrial Informatics, 18(8), 5547-5557.
+
+            <h2 style="font-size: 25px;" id="2020">2020</h2>
+
+                <strong><a href="https://www.ieice.org/publications/proceedings/summary.php?expandable=7&iconf=ICETC&session_num=SA1&number=SA1-6&year=2020" style="color:#000000; text-decoration:none;">[Paper]</a></strong>
+                <strong><a href="https://doi.org/10.34385/proc.63.SA1-6" style="color:#000000; text-decoration:none;">[Doi]</a></strong>
+                THUWAJIT, P., BANLUESOMBATKUL, N., SAWANGJAI, P., LAKHAN, P., & WILAIPRASITPORN, T. (2020). Explainable Deep Convolutional Neural Network in EEG Seizure Onset Prediction. IEICE Proceedings Series, 63(SA1-6).
+        </div>
+    </div>
+</body>
